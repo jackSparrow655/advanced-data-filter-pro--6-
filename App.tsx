@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import DataTable from "./components/DataTable";
-// import { AdvancedFilter } from "./components/AdvancedFilter";
+import { AdvancedFilter } from "./components/AdvancedFilter";
 import { MOCK_DATA, COLUMNS } from "./constants";
 import { TableData } from "./types";
 import { Filter as FilterIcon, SearchX } from "lucide-react";
 import { Button } from "./components/ui/Button";
 import "./index.css";
-import { AdvancedFilter } from "nest-filter";
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
